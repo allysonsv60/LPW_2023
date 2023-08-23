@@ -21,15 +21,17 @@
 <button onclick="divisao()">Divisão</button>
 
 <script>
+  let numero1;
+  let numero2;
+  numero1 = Number( document.getElementById("num1").value);
+  numero2 = Number( document.getElementById("num2").value);
 
 function somar(){
 
-    let numero1; // Primeiro numero a ser digitado
-    let numero2; // Segundo numero a ser digitado
+    
     let soma; // Resultado da soma
 
-    numero1 = Number( document.getElementById("num1").value);
-    numero2 = Number( document.getElementById("num2").value);
+    
     soma = numero1 + numero2;
 
     document.getElementById("resultado").innerText = "Resultado = "+soma;
@@ -43,12 +45,10 @@ function somar(){
 
 function subtrair(){
 
-let numero1; // Primeiro numero a ser digitado
-let numero2; // Segundo numero a ser digitado
+
 let subtracao; // Resultado da subtração
 
-numero1 = Number( document.getElementById("num1").value);
-numero2 = Number( document.getElementById("num2").value);
+
 subtracao = numero1 - numero2;
 
 document.getElementById("resultado").innerText = "Resultado = "+subtracao;
@@ -61,12 +61,10 @@ document.getElementById("resultado").innerText = "Resultado = "+subtracao;
 
 function multiplica(){
 
-let numero1; // Primeiro numero a ser digitado
-let numero2; // Segundo numero a ser digitado
+
 let multiplica; // Resultado da subtração
 
-numero1 =  document.getElementById("num1").value;
-numero2 =  document.getElementById("num2").value;
+
 multiplica = numero1 * numero2;
 
 document.getElementById("resultado").innerText = "Resultado = "+multiplica;
@@ -79,12 +77,9 @@ document.getElementById("resultado").innerText = "Resultado = "+multiplica;
 
 function divisao(){
 
-let numero1; // Primeiro numero a ser digitado
-let numero2; // Segundo numero a ser digitado
+
 let divisao; // Resultado da subtração
 
-numero1 =  document.getElementById("num1").value;
-numero2 =  document.getElementById("num2").value;
 
 
 if(numero2 == 0){
