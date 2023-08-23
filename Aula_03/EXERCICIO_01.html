@@ -87,6 +87,10 @@ numero1 = Number( document.getElementById("num1").value);
 numero2 = Number( document.getElementById("num2").value);
 divisao = (numero1 / numero2);
 
+if(numero1 = 0 or numero 2 = 0){
+  document.getElementById("resultado").innerText = "Não pode dividir 0 ";
+}
+
 document.getElementById("resultado").innerText = "Resultado = "+divisao;
 
 
