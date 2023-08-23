@@ -3,7 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documento1</title>
+    <title>Document</title>
+    <script>
+      let numero1;
+      let numero2;
+      
+    
+    function somar(){
+    
+        
+        let soma; // Resultado da soma
+
+        numero1 = Number( document.getElementById("num1").value);
+        numero2 = Number( document.getElementById("num2").value);
+    
+        
+        soma = numero1 + numero2;
+    
+        document.getElementById("resultado").innerText = "Resultado = "+soma;
+    
+    
+    
+    
+    
+    }
+    
+    
+    function subtrair(){
+    
+    
+    let subtracao; // Resultado da subtração
+
+      numero1 = Number( document.getElementById("num1").value);
+      numero2 = Number( document.getElementById("num2").value);
+    
+    
+    subtracao = numero1 - numero2;
+    
+    document.getElementById("resultado").innerText = "Resultado = "+subtracao;
+    
+    
+    
+    
+    
+    }
+    
+    function multiplica(){
+    
+    
+    let multiplica; // Resultado da subtração
+    
+      numero1 = Number( document.getElementById("num1").value);
+      numero2 = Number( document.getElementById("num2").value);
+    
+    multiplica = numero1 * numero2;
+    
+    document.getElementById("resultado").innerText = "Resultado = "+multiplica;
+    
+    
+    
+    
+    
+    }
+    
+    function divisao(){
+    
+    
+    let divisao; // Resultado da subtração
+
+      numero1 = Number( document.getElementById("num1").value);
+      numero2 = Number( document.getElementById("num2").value);
+    
+    
+    
+    if(numero2 == 0){
+      document.getElementById("resultado").innerText = "Não pode dividir 0 ";
+    }
+    else{
+      divisao = (numero1 / numero2);
+      document.getElementById("resultado").innerText = "Resultado = "+divisao;
+    }
+    
+    
+    
+    
+    
+    
+    
+    }
+    
+    
+    
+    
+    </script>
 </head>
 <body>
   <h1>Exercicio 1 </h1>
@@ -20,88 +112,7 @@
 <button onclick="multiplica()">Multiplicação</button>
 <button onclick="divisao()">Divisão</button>
 
-<script>
-  let numero1;
-  let numero2;
-  numero1 = Number( document.getElementById("num1").value);
-  numero2 = Number( document.getElementById("num2").value);
 
-function somar(){
-
-    
-    let soma; // Resultado da soma
-
-    
-    soma = numero1 + numero2;
-
-    document.getElementById("resultado").innerText = "Resultado = "+soma;
-
-
-
-
-
-}
-
-
-function subtrair(){
-
-
-let subtracao; // Resultado da subtração
-
-
-subtracao = numero1 - numero2;
-
-document.getElementById("resultado").innerText = "Resultado = "+subtracao;
-
-
-
-
-
-}
-
-function multiplica(){
-
-
-let multiplica; // Resultado da subtração
-
-
-multiplica = numero1 * numero2;
-
-document.getElementById("resultado").innerText = "Resultado = "+multiplica;
-
-
-
-
-
-}
-
-function divisao(){
-
-
-let divisao; // Resultado da subtração
-
-
-
-if(numero2 == 0){
-  document.getElementById("resultado").innerText = "Não pode dividir 0 ";
-}
-else{
-  divisao = (numero1 / numero2);
-  document.getElementById("resultado").innerText = "Resultado = "+divisao;
-}
-
-
-
-
-
-
-
-}
-
-
-
-
-</script>
 <p id = "resultado"></p>
 </body>
 </html>
