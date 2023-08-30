@@ -17,12 +17,12 @@
   <button onclick="dividir()">Dividir</button>
     <script>
         function somar(){
-          var num1 = Number(document.getElementById("num1"));
-          var num2 = Number(document.getElementById("num2"));
+          var num1 = Number(document.getElementById("num1").value);
+          var num2 = Number(document.getElementById("num2").value);
           
 
           // Calcula a soma dos números
-          var sum = num1 + num2; // num1 = num1 + num2
+          var sum = num1 += num2; // num1 = num1 + num2
 
           // Mostra o resultado no elemento de parágrafo
           document.getElementById("result").innerText = "A soma é " + sum ;
