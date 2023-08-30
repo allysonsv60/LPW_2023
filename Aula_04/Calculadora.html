@@ -33,11 +33,11 @@
             let num2 = parseFloat(document.getElementById('num2').value);
             let calculo = document.querySelector('input[name="calculo"]:checked').value;
 
-            let result;
+            //let result;
 
             switch (calculo) {
                 case 'soma':
-                    result = num1 + num2;
+                     num1 += num2;
                     break;
                 case 'subtracao':
                     result = num1 - num2;
