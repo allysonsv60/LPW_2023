@@ -4,98 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
-      let numero1;
-      let numero2;
-      
     
-    function somar(){
-    
-        
-        let soma; // Resultado da soma
-
-        numero1 = Number( document.getElementById("num1").value);
-        numero2 = Number( document.getElementById("num2").value);
-    
-        
-        soma = numero1 + numero2;
-    
-        document.getElementById("resultado").innerText = "Resultado = "+soma;
-    
-    
-    
-    
-    
-    }
-    
-    
-    function subtrair(){
-    
-    
-    let subtracao; // Resultado da subtração
-
-      numero1 = Number( document.getElementById("num1").value);
-      numero2 = Number( document.getElementById("num2").value);
-    
-    
-    subtracao = numero1 - numero2;
-    
-    document.getElementById("resultado").innerText = "Resultado = "+subtracao;
-    
-    
-    
-    
-    
-    }
-    
-    function multiplica(){
-    
-    
-    let multiplica; // Resultado da subtração
-    
-      numero1 = Number( document.getElementById("num1").value);
-      numero2 = Number( document.getElementById("num2").value);
-    
-    multiplica = numero1 * numero2;
-    
-    document.getElementById("resultado").innerText = "Resultado = "+multiplica;
-    
-    
-    
-    
-    
-    }
-    
-    function divisao(){
-    
-    
-    let divisao; // Resultado da subtração
-
-      numero1 = Number( document.getElementById("num1").value);
-      numero2 = Number( document.getElementById("num2").value);
-    
-    
-    
-    if(numero2 == 0){
-      document.getElementById("resultado").innerText = "Não pode dividir 0 ";
-    }
-    else{
-      divisao = (numero1 / numero2);
-      document.getElementById("resultado").innerText = "Resultado = "+divisao;
-    }
-    
-    
-    
-    
-    
-    
-    
-    }
-    
-    
-    
-    
-    </script>
 </head>
 <body>
   <h1>Exercicio 1 </h1>
@@ -106,6 +15,99 @@
   <input type="text" id="num2" name="lname" ><br><br>
   <input type="radio" name="calculo" value="Somar">Somar<br>
   <input type="radio" name="calculo" value="Subtrair">Subtrarir<br>
+
+  <script>
+    let numero1;
+    let numero2;
+    
+  
+  function somar(){
+  
+      
+      let soma; // Resultado da soma
+
+      numero1 = Number( document.getElementById("num1").value);
+      numero2 = Number( document.getElementById("num2").value);
+  
+      
+      soma = numero1 + numero2;
+  
+      document.getElementById("resultado").innerText = "Resultado = "+soma;
+  
+  
+  
+  
+  
+  }
+  
+  
+  function subtrair(){
+  
+  
+  let subtracao; // Resultado da subtração
+
+    numero1 = Number( document.getElementById("num1").value);
+    numero2 = Number( document.getElementById("num2").value);
+  
+  
+  subtracao = numero1 - numero2;
+  
+  document.getElementById("resultado").innerText = "Resultado = "+subtracao;
+  
+  
+  
+  
+  
+  }
+  
+  function multiplica(){
+  
+  
+  let multiplica; // Resultado da subtração
+  
+    numero1 = Number( document.getElementById("num1").value);
+    numero2 = Number( document.getElementById("num2").value);
+  
+  multiplica = numero1 * numero2;
+  
+  document.getElementById("resultado").innerText = "Resultado = "+multiplica;
+  
+  
+  
+  
+  
+  }
+  
+  function divisao(){
+  
+  
+  let divisao; // Resultado da subtração
+
+    numero1 = Number( document.getElementById("num1").value);
+    numero2 = Number( document.getElementById("num2").value);
+  
+  
+  
+  if(numero2 == 0){
+    document.getElementById("resultado").innerText = "Não pode dividir 0 ";
+  }
+  else{
+    divisao = (numero1 / numero2);
+    document.getElementById("resultado").innerText = "Resultado = "+divisao;
+  }
+  
+  
+  
+  
+  
+  
+  
+  }
+  
+  
+  
+  
+  </script>
   
 </form> 
 
