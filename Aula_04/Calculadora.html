@@ -40,16 +40,17 @@
                    num1 += num2;
                     break;
                 case 'subtracao':
-                    result = num1 - num2;
+                    num1 -= num2;
                     break;
                 case 'multiplica':
-                    result = num1 * num2;
+                    num1 *= num2;
                     break;
                 case 'divisao':
-                    if (num2 !== 0) {
-                        result = num1 / num2;
+                    if (num2 == 0) {
+                        document.getElementById('result').textContent = "não pode divisão por 0 ";
                     } else {
-                        result = 'Divisão por zero';
+                        num1 /= num2;
+                        
                     }
                     break;
             }
