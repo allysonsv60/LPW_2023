@@ -33,7 +33,7 @@
             let num2 = parseFloat(document.getElementById('num2').value);
             let calculo = document.querySelector('input[name="calculo"]:checked').value;
 
-            //let result;
+            
 
             switch (calculo) {
                 case 'soma':
@@ -48,7 +48,7 @@
                 case 'divisao':
                     if (num2 == 0) {
                         document.getElementById('result').textContent = "não pode divisão por 0 ";
-                        break;
+                        
                     } 
                     else {
                         num1 /= num2;
