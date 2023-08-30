@@ -22,10 +22,10 @@
           
 
           // Calcula a soma dos números
-          var sum = num1 += num2; // num1 = num1 + num2
+           num1 += num2; // num1 = num1 + num2
 
           // Mostra o resultado no elemento de parágrafo
-          document.getElementById("result").innerText = "A soma é " + sum ;
+          document.getElementById("result").innerText = "A soma é " + num1 ;
         }
 
         function subtrair(){
@@ -33,10 +33,10 @@
           var num2 = Number(document.getElementById("num2").value);
 
           // Calcula a soma dos números
-          var sum = num1 - num2;
+          num1 -= num2;
 
           // Mostra o resultado no elemento de parágrafo
-          document.getElementById("result").innerText = "A subtração é " + sum;
+          document.getElementById("result").innerText = "A subtração é " + num1;
         }
 
         function multiplicar(){
@@ -44,10 +44,10 @@
           var num2 = Number(document.getElementById("num2").value);
 
           // Calcula a soma dos números
-          var sum = num1 * num2;
+          num1 *= num2;
 
           // Mostra o resultado no elemento de parágrafo
-          document.getElementById("result").innerText = "O produto é " + sum;
+          document.getElementById("result").innerText = "O produto é " + num1;
         }
 
         function dividir(){
@@ -55,7 +55,7 @@
           var num2 = Number(document.getElementById("num2").value);
 
           // Calcula a soma dos números
-          var sum = num1 / num2;
+          num1 /= num2;
 
           // Mostra o resultado no elemento de parágrafo
           document.getElementById("result").innerText = "A divisao é " + sum;
