@@ -52,11 +52,14 @@
           var num1 = Number(document.getElementById("num1").value);
           var num2 = Number(document.getElementById("num2").value);
 
-          // Calcula a soma dos números
-          var sum = num1 / num2;
-
-          // Mostra o resultado no elemento de parágrafo
-          document.getElementById("result").innerText = "A divisao é " + sum;
+          if(numero2 == 0){
+           document.getElementById("resultado").innerText = "Não pode dividir 0 ";
+           }
+          else{
+                divisao = (numero1 / numero2);
+                document.getElementById("resultado").innerText = "Resultado = "+divisao;
+             }
+  
         }
 
     </script>
