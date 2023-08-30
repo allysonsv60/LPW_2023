@@ -48,7 +48,9 @@
                 case 'divisao':
                     if (num2 == 0) {
                         document.getElementById('result').textContent = "não pode divisão por 0 ";
-                    } else {
+                        break;
+                    } 
+                    else {
                         num1 /= num2;
                         
                     }
