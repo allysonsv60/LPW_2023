@@ -14,11 +14,26 @@
     <p id="resultado"></p>
 
     <script>
-        function verificarNome() {
-            var nome = document.getElementById("nomeInput").value;
+        function verificarPalavra() {
+            var a = document.getElementById("palavraInput").value;
             var resultado = document.getElementById("resultado");
+            a = a.toUppercase();
 
-            
+            var b = "";
+
+            for (let i = a.length - 1; i >= 0; i--){
+                b += a{i};
+              
+            }
+
+            if (a === b) {
+                resultado.textContent = "São palindromos";
+            } else {
+                resultado.textContent = "Não são palindromos";
+                
+            }
+
+
         }
   
     </script>
