@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<h1>Exercicio 4</h1>
+<body>
+    <p id = "resultado"></p>
+    
+    <script>
+        let texto = "";
+
+        let i = 0;
+        
+        while (i<=10) {
+            
+            texto +="<br>O numero é : " + i;
+            i++;
+            if (i%2 == 0){
+             document.getElementById("resultado").innerHTML = texto;;
+            }
+           
+        
+        }
+        //document.getElementById("resultado").innerHTML = texto;
+
+    </script>
+
+
+    
+</body>
+</html>
