@@ -22,10 +22,16 @@
 
             if (nome.startsWith("a")) {
                 resultado.textContent = "O nome começa com 'a'.";
-            } else {
+            }
+            else if (nome.startsWith("A")) {
                 resultado.textContent = "O nome começa com 'A'.";
             }
+
+            else{
+                resultado.textContent = "O nome não começa com 'A' ou 'a'"
+            }
         }
+
     </script>
 </body>
 </html>
