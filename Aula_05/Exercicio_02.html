@@ -16,7 +16,7 @@
     <script>
         function verificarPalavra() {
             var a = document.getElementById("palavraInput").value;
-            var resultado = document.getElementById("resultado");
+          //  var resultado = document.getElementById("resultado");
             a = a.toUppercase();
 
             var b = "";
@@ -27,9 +27,9 @@
             }
 
             if (a === b) {
-                resultado.textContent = "São palindromos";
+               document.getElementById("resultado") = "São palindromos";
             } else {
-                resultado.textContent = "Não são palindromos";
+                document.getElementById("resultado")= "Não são palindromos";
                 
             }
 
