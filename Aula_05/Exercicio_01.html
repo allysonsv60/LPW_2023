@@ -5,18 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicio_01</title>
 </head>
-<h1> Exercicio_01 </h1>
+<h1> Exercicio 01 </h1>
 <body>
-    <p id = "resultado"></p>
-<script>
-    var nome = "Allyson";
-    document.getElementById("resultado").innerHTML = nome;
+    <h1>Verificar Nome</h1>
+    <label for="nome">Digite um nome: </label>
+    <input type="text" id="nomeInput">
+    <button onclick="verificarNome()">Verificar</button>
+    <p id="resultado"></p>
 
+    <script>
+        function verificarNome() {
+            var nome = document.getElementById("nomeInput").value;
+            var resultado = document.getElementById("resultado");
 
+            // Converter o nome para minúsculas para facilitar a comparação
+            nome = nome.toLowerCase();
 
-
-</script>
-
-    
+            if (nome.startsWith("a")) {
+                resultado.textContent = "O nome começa com 'A' ou 'a'.";
+            } else {
+                resultado.textContent = "O nome não começa com 'A' ou 'a'.";
+            }
+        }
+    </script>
 </body>
 </html>
