@@ -9,17 +9,19 @@
 <body>
     <h4>Verificar Paliodromo</h4>
     <label for="nome">Digite uma palavra: </label>
-    <input type="text" id="palavra">
+    <input type="text" id="palavraInput">
     <button onclick="verificarPalavra()">Verificar</button>
     <p id="resultado"></p>
 
     <script>
         //function verificarNome() {
-        //    var nome = document.getElementById("nomeInput").value;
+          //  var nome = document.getElementById("nomeInput").value;
            // var resultado = document.getElementById("resultado");
 
             
-            function verificarPalavra(str) {     
+            function verificarPalavra(str) { 
+                var palavra = document.getElementById("palavraInput").value;
+                var resultado = document.getElementById("resultado");    
                         var palavra = [];
                         for(var i = 0; i<str.length; i++){      
                         palavra.unshift(str.charAt(i)); 
@@ -30,6 +32,8 @@
                  palavra.push(str.charAt(j));
 }
     palavra.textContent(palavra);
+    resultado.textContent = palavra;
+    resultado.textContent = palavra;
     };
     </script>
     
