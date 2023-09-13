@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<h1>Exercicio 1</h1>
+<h1>Exercicio 2</h1>
 <body>
     <h4>média aritmética</h4>
     <p id = "resultado"></p>
 
     
-   
     <label for="num1">Número 1: </label>
     <input type="numero" id="num1"><br><br>
 
@@ -26,6 +25,24 @@
     
     <script>
         function media() {
+
+            var max = Number.NEGATIVE_INFINITY;
+
+            for (var i = 0; i < arguments.length; i++) {
+
+                if (i > max) {
+                    max = arguments[i];
+                    
+                
+
+                return max
+                
+                
+            }
+        }
+
+
+
             var num1 = Number(document.getElementById("num1").value);
             var num2 = Number(document.getElementById("num2").value);
             var num3 = Number(document.getElementById("num3").value);
