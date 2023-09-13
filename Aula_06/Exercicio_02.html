@@ -7,18 +7,14 @@
 </head>
 <h1>Exercicio 2</h1>
 <body>
-    <h4>média aritmética</h4>
+    <h4>Média aritmética</h4>
     <p id = "resultado"></p>
 
     
     <label for="num1">Número 1: </label>
     <input type="numero" id="num1"><br><br>
 
-    <label for="num2">Número 2: </label>
-    <input type="numero" id="num2"><br><br>
-
-    <label for="num3">Número 3: </label>
-    <input type="numero" id="num3"><br><br>
+  
 
 
     <button onclick="media()">Verificar</button>
@@ -26,12 +22,12 @@
     <script>
         function media() {
 
-            var max = Number.NEGATIVE_INFINITY;
+            var num1 = Number(document.getElementById("num1").value);
 
-            for (var i = 0; i < arguments.length; i++) {
+            for (var i = 0; i < num1.length; i++) {
 
-                if (i > max) {
-                    max = arguments[i];
+                if (num1.length) {
+                    num1++;
                     
                 
 
@@ -40,19 +36,19 @@
                 
             }
         }
+        return num1;
 
 
 
-            var num1 = Number(document.getElementById("num1").value);
-            var num2 = Number(document.getElementById("num2").value);
-            var num3 = Number(document.getElementById("num3").value);
+          //  var num1 = Number(document.getElementById("num1").value);
+            
 
-          media = (num1 + num2 + num3)/3;
+         // media = (num1 + num2 + num3)/3;
              
 
 
        
-        document.getElementById("resultado").innerHTML ="A media é = "+ media;
+        document.getElementById("resultado").innerHTML ="R = "+ num1;
     }
 
     </script>
