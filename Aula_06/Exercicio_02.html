@@ -16,25 +16,29 @@
     <input type="numero" id="num1"><br><br>
 
     
-    <button onclick="fatorial()">Verificar</button>
+    <button onclick="media()">Verificar</button>
     
     <script>
-        function fatorial() {
-            var num1 = Number(document.getElementById("num1").value);
-            
-          for (let i = 0; i < num1.lenthg; i--) {
-            fator = num1*num1;
+        function media() {
+  if (arguments.length === 0) {
+    return 0; // Retorna 0 se nenhum argumento for passado
+  }
 
+  let soma = 0;
+  for (let i = 0; i < arguments.length; i++) {
+    soma += arguments[i];
+  }
 
-          }
-        }
+  const media = soma / arguments.length;
+  return media;
+}
 
             
 
 
        
         
-    document.getElementById("resultado").innerHTML ="A media é = "+ fator;
+    document.getElementById("resultado").innerHTML ="A media é = "+ media;
 
     </script>
 
