@@ -1,50 +1,46 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<h1>Exercicio 5</h1>
 <body>
-    <h4>Média aritmética</h4>
-    <p id = "resultado"></p>
+    <form >
+        <input type="number" id="num1" placeholder="Digite um numero"><br><br><br>
+        <input type="number" id="num2" placeholder="Digite um numero"><br><br><br>
+        <input type="number" id="num3" placeholder="Digite um numero"><br><br><br>
+        <input type="number" id="num4" placeholder="Digite um numero"><br><br><br>
+        <input type="number" id="num5" placeholder="Digite um numero"><br><br><br>
+      </form>
 
-    
-   
-    <label for="num1">Número 1: </label>
-    <input type="numero" id="num1"><br><br>
+    <button type="button" onclick="media(Number(document.getElementById('num1').value),
+                                         Number(document.getElementById('num2').value),
+                                         Number(document.getElementById('num3').value),
+                                         Number(document.getElementById('num4').value),
+                                         Number(document.getElementById('num5').value))">Executar</button>
+    <p id="resultado"></p>
 
-    
-    <button onclick="media()">Verificar</button>
-    
     <script>
+
+
         function media() {
-  if (arguments.length === 0) {
-    return 0; // Retorna 0 se nenhum argumento for passado
-  }
-
-  let soma = 0;
-  for (let i = 0; i < arguments.length; i++) {
-    soma += arguments[i];
-  }
-
-  const media = soma / arguments.length;
-  return media;
-}
-
+            var soma = 0;
+            conta = 0;
+            for(var i = 0; i < arguments.length; i++){
+                if (arguments[i] > 0){
+                    soma += arguments[i];
+                    conta++;
+                } 
+            }
+            media = soma / conta;
             
 
-
-       
+            document.getElementById("resultado").innerHTML = "Média = " + media;
+        }
         
-    document.getElementById("resultado").innerHTML ="A media é = "+ media;
-
     </script>
 
 
-    
-    
-    
 </body>
 </html>
