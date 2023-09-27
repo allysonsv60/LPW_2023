@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora de IMC</title>
+</head>
+<body>
+  <h1>Calculadora de IMC</h1>
+  
+  <form id="imc-form">
+    <label for="peso">Peso (kg):</label>
+    <input type="number" id="peso"  ><br><br>
+    
+    <label for="altura">Altura (m):</label>
+    <input type="number" id="altura"  ><br><br>
+    
+    
+    <button onclick="calcular()">Calcular</button>
+  </form>
+  
+  <p id="resultado"></p>
+  
+  <script>
+
+
+    function calcular() {
+      
+      const peso = parseFloat(document.getElementById("peso").value);
+      const altura = parseFloat(document.getElementById("altura").value);
+      
+      const imc = peso / (altura * 2);
+     
+
+      if (imc < 17) {
+        aviso = "Muito abaixo do peso";
+      } else if (imc >= 17 && imc < 18.5) {
+        aviso = "Abaixo do peso";
+      } else if (imc >= 18.5 && imc < 25) {
+        aviso = "Peso normal";
+      } else if (imc >= 25 && imc < 30) {
+        aviso = "Acima do peso";
+      } else if (imc >= 30 && imc < 35) {
+        aviso = "Obesidade I";
+      } else if (imc >= 35 && imc < 40) {
+        aviso = "Obesidade II (severa)";
+      } else {
+        aviso = "Obesidade III (mórbida)";
+      }
+      
+      document.getElementById("resultado").innerHTML = "Seu IMC é " +imc+ "e sua situação é "+aviso;
+    }
+  </script>
+</body>
+</html>
