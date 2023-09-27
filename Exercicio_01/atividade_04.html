@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<h1>Calculadora de Média</h1>
+    <p>Digite o nome e as três notas do aluno:</p>
+    <label for="nome">Nome: </label>
+    <input type="text" id="nome"><br>
+    <label for="nota1">Nota 1: </label>
+    <input type="text" id="nota1"><br>
+    <label for="nota2">Nota 2: </label>
+    <input type="text" id="nota2"><br>
+    <label for="nota3">Nota 3: </label>
+    <input type="text" id="nota3"><br>
+    <button onclick="calcularMedia()">Calcular Média</button>
+    <p id="resultado"></p>
+
+<body>
+
+    <script>
+        function calcularMedia() {
+            var nome = document.getElementById("nome").value;
+            var nota1 = parseFloat(document.getElementById("nota1").value);
+            var nota2 = parseFloat(document.getElementById("nota2").value);
+            var nota3 = parseFloat(document.getElementById("nota3").value);
+
+            var media = (nota1 + nota2 + nota3) / 3;
+
+            var resultado = document.getElementById("resultado");
+
+            if (media >= 90) {
+                resultado.innerHTML = nome + ", Aprovado com honras!";
+            } else if (media >= 70) {
+                resultado.innerHTML = nome + ", Aprovado com boas notas!";
+            } else if (media >= 50) {
+                resultado.innerHTML = nome + ", Aprovado!";
+            } else {
+                resultado.innerHTML = nome + ", Reprovado.";
+            }
+        }
+    </script>
+    
+</body>
+</html>
