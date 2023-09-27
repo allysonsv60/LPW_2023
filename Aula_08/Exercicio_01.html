@@ -1,49 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <title>Calculadora de IMC</title>
 </head>
 <body>
-  <h1>Exercicio 1 </h1>
-  <form >
-    <input type="number" id="peso" placeholder="Digite seu peso"><br><br><br>
-    <input type="number" id="altura" placeholder="Digite sua altura"><br><br><br>
-  </form>
-  <button onclick="calcularIMC(Number(document.getElementById('peso').value),
-                            Number(document.getElementById('altura').value),
-                            )">Calcular</button>
+  <h1>Calculadora de IMC</h1>
   
-    <script>
-            function calcularIMC(peso, altura) {
-            const imc = peso / (altura * altura);
+  <form id="imc-form">
+    <label for="peso">Peso (kg):</label>
+    <input type="number" id="peso" step="0.01" required>
+    
+    <label for="altura">Altura (m):</label>
+    <input type="number" id="altura" step="0.01" required>
+    
+    <input type="submit" value="Calcular">
+  </form>
+  
+  <p id="resultado"></p>
+  
+  <script>
+    document.getElementById("imc-form").addEventListener("submit", function(event) {
+      event.preventDefault();
+      
+      const peso = parseFloat(document.getElementById("peso").value);
+      const altura = parseFloat(document.getElementById("altura").value);
+      
+      const imc = peso / (altura * altura);
+      let situacao = "";
 
-  if (imc < 17) {
-    return "Muito abaixo do peso";
-  } else if (imc >= 17 && imc < 18.5) {
-    return "Abaixo do peso";
-  } else if (imc >= 18.5 && imc < 25) {
-    return "Peso normal";
-  } else if (imc >= 25 && imc < 30) {
-    return "Acima do peso";
-  } else if (imc >= 30 && imc < 35) {
-    return "Obesidade I";
-  } else if (imc >= 35 && imc < 40) {
-    return "Obesidade II (severa)";
-  } else {
-    return "Obesidade III (mórbida)";
-  }
-}
-              
-                  
-
-
-
-        
-        
-
-    </script>
- <p id="result"></p>
+      if (imc < 17) {
+        situacao = "Muito abaixo do peso";
+      } else if (imc >= 17 && imc < 18.5) {
+        situacao = "Abaixo do peso";
+      } else if (imc >= 18.5 && imc < 25) {
+        situacao = "Peso normal";
+      } else if (imc >= 25 && imc < 30) {
+        situacao = "Acima do peso";
+      } else if (imc >= 30 && imc < 35) {
+        situacao = "Obesidade I";
+      } else if (imc >= 35 && imc < 40) {
+        situacao = "Obesidade II (severa)";
+      } else {
+        situacao = "Obesidade III (mórbida)";
+      }
+      
+      document.getElementById("resultado").innerHTML = `Seu IMC é ${imc.toFixed(2)} - ${situacao}`;
+    });
+  </script>
 </body>
 </html>
