@@ -6,7 +6,8 @@
         function ordenarNumeros() {
             var numeros = [];
             for (var i = 1; i <= 5; i++) {
-                var numero = parseFloat(prompt("Digite o número " + i + ":"));
+                var inputId = "numero" + i;
+                var numero = parseFloat(document.getElementById(inputId).value);
                 numeros.push(numero);
             }
 
@@ -23,6 +24,11 @@
 <body>
     <h1>Ordenação de Números</h1>
     <p>Informe 5 números para ordená-los em ordem crescente:</p>
+    <input type="number" id="numero1" placeholder="Número 1"><br>
+    <input type="number" id="numero2" placeholder="Número 2"><br>
+    <input type="number" id="numero3" placeholder="Número 3"><br>
+    <input type="number" id="numero4" placeholder="Número 4"><br>
+    <input type="number" id="numero5" placeholder="Número 5"><br>
     <button onclick="ordenarNumeros()">Ordenar Números</button>
     <p id="resultado"></p>
 </body>
