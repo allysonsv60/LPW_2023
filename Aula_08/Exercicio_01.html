@@ -28,25 +28,25 @@
       const altura = parseFloat(document.getElementById("altura").value);
       
       const imc = peso / (altura * 2);
-      //let situacao = "";
+     
 
       if (imc < 17) {
-        situacao = "Muito abaixo do peso";
+        aviso = "Muito abaixo do peso";
       } else if (imc >= 17 && imc < 18.5) {
-        situacao = "Abaixo do peso";
+        aviso = "Abaixo do peso";
       } else if (imc >= 18.5 && imc < 25) {
-        situacao = "Peso normal";
+        aviso = "Peso normal";
       } else if (imc >= 25 && imc < 30) {
-        situacao = "Acima do peso";
+        aviso = "Acima do peso";
       } else if (imc >= 30 && imc < 35) {
-        situacao = "Obesidade I";
+        aviso = "Obesidade I";
       } else if (imc >= 35 && imc < 40) {
-        situacao = "Obesidade II (severa)";
+        aviso = "Obesidade II (severa)";
       } else {
-        situacao = "Obesidade III (mórbida)";
+        aviso = "Obesidade III (mórbida)";
       }
       
-      document.getElementById("resultado").innerHTML = "Seu IMC é " +imc+ "e sua situação é "+situacao;
+      document.getElementById("resultado").innerHTML = "Seu IMC é " +imc+ "e sua situação é "+aviso;
     };
   </script>
 </body>
