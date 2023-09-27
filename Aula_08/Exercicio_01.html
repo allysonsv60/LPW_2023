@@ -8,24 +8,26 @@
   
   <form id="imc-form">
     <label for="peso">Peso (kg):</label>
-    <input type="number" id="peso" step="0.01" required  ><br><br>
+    <input type="number" id="peso"  ><br><br>
     
     <label for="altura">Altura (m):</label>
-    <input type="number" id="altura" step="0.01" required ><br><br>
+    <input type="number" id="altura"  ><br><br>
     
     <input type="submit" value="Calcular">
+    <button onclick="calcular()">Calcular</button>
   </form>
   
   <p id="resultado"></p>
   
   <script>
-    document.getElementById("imc-form").addEventListener("submit", function(event) {
-      event.preventDefault();
+
+
+    function calcular() {
       
       const peso = parseFloat(document.getElementById("peso").value);
       const altura = parseFloat(document.getElementById("altura").value);
       
-      const imc = peso / (altura * altura);
+      const imc = peso / (altura * 2);
       let situacao = "";
 
       if (imc < 17) {
@@ -45,7 +47,7 @@
       }
       
       document.getElementById("resultado").innerHTML = "Seu IMC é " +imc+ "e sua situação é "+situacao;
-    });
+    };
   </script>
 </body>
 </html>
