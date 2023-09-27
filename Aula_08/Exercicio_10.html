@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Retornar Números Pares</title>
+    <script>
+        function retornarNumerosPares() {
+            var numeros = [];
+            for (var i = 1; i <= 5; i++) {
+                var inputId = "numero" + i;
+                var numero = parseInt(document.getElementById(inputId).value);
+                numeros.push(numero);
+            }
+
+            var numerosPares = [];
+
+            for (var j = 0; j < numeros.length; j++) {
+                if (numeros[j] % 2 === 0) {
+                    numerosPares.push(numeros[j]);
+                }
+            }
+
+            var resultado = document.getElementById("resultado");
+            resultado.innerHTML = "Números pares: " + numerosPares.join(", ");
+        }
+    </script>
+</head>
+<body>
+    <h1>Retornar Números Pares</h1>
+    <p>Informe 5 números para retornar os números pares:</p>
+    <input type="number" id="numero1" placeholder="Número 1"><br>
+    <input type="number" id="numero2" placeholder="Número 2"><br>
+    <input type="number" id="numero3" placeholder="Número 3"><br>
+    <input type="number" id="numero4" placeholder="Número 4"><br>
+    <input type="number" id="numero5" placeholder="Número 5"><br>
+    <button onclick="retornarNumerosPares()">Retornar Números Pares</button>
+    <p id="resultado"></p>
+</body>
+</html>
