@@ -31,19 +31,19 @@
      
 
       if (imc < 17) {
-        aviso = "Muito abaixo do peso";
+        aviso = " muito abaixo do peso";
       } else if (imc >= 17 && imc < 18.5) {
-        aviso = "Abaixo do peso";
+        aviso = " abaixo do peso";
       } else if (imc >= 18.5 && imc < 25) {
-        aviso = "Peso normal";
+        aviso = " peso normal";
       } else if (imc >= 25 && imc < 30) {
-        aviso = "Acima do peso";
+        aviso = " acima do peso";
       } else if (imc >= 30 && imc < 35) {
-        aviso = "Obesidade I";
+        aviso = " obesidade I";
       } else if (imc >= 35 && imc < 40) {
-        aviso = "Obesidade II (severa)";
+        aviso = " obesidade II (severa)";
       } else {
-        aviso = "Obesidade III (mórbida)";
+        aviso = " obesidade III (mórbida)";
       }
       
       document.getElementById("resultado").innerHTML = "Seu IMC é " +imc+ " e sua situação é "+aviso;
