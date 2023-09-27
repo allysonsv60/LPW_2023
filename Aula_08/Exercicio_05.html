@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<h1>Exercicio 6</h1>
+<body>
+    <h4>Loop com os dez primeiros numeros pares com WHILE</h4>
+    <p id = "resultado"></p>
+    <button onclick="loop()">Verificar</button>
+    
+    <script>
+        function loop() {
+        let texto = "";
+
+        let i = 1;
+        
+        while (i< 101) {
+            
+            texto +="<br>A soma é: : " + (i+i);
+            i++;
+         
+   
+           
+           
+        
+        }
+        document.getElementById("resultado").innerHTML = texto;
+    }
+    </script>
+
+
+    
+</body>
+</html>
