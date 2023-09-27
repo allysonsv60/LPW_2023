@@ -8,25 +8,35 @@
 <body>
   <h1>Exercicio 1 </h1>
   <form >
-    <input type="number" id="num1" placeholder="Digite um numero"><br><br><br>
-    <input type="number" id="num2" placeholder="Digite um numero"><br><br><br>
+    <input type="number" id="peso" placeholder="Digite seu peso"><br><br><br>
+    <input type="number" id="altura" placeholder="Digite sua altura"><br><br><br>
   </form>
-  <button onclick="somar()">Somar</button>
+  <button onclick="calcularIMC(Number(document.getElementById('peso').value),
+                            Number(document.getElementById('altura').value),
+                            )">Calcular</button>
   
     <script>
-        function somar(){
-          var num1 = Number(document.getElementById("num1").value);
-          var num2 = Number(document.getElementById("num2").value);
-                    
-           (num1*num1)/num2;
+            function calcularIMC(peso, altura) {
+            const imc = peso / (altura * altura);
 
-          
-          document.getElementById("result").innerText = "A soma é " + num1 ;
-        }
-
-
-
-       
+  if (imc < 17) {
+    return "Muito abaixo do peso";
+  } else if (imc >= 17 && imc < 18.5) {
+    return "Abaixo do peso";
+  } else if (imc >= 18.5 && imc < 25) {
+    return "Peso normal";
+  } else if (imc >= 25 && imc < 30) {
+    return "Acima do peso";
+  } else if (imc >= 30 && imc < 35) {
+    return "Obesidade I";
+  } else if (imc >= 35 && imc < 40) {
+    return "Obesidade II (severa)";
+  } else {
+    return "Obesidade III (mórbida)";
+  }
+}
+              
+                  
 
 
 
