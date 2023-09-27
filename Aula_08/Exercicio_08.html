@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ordenação de Números</title>
+    <script>
+        function ordenarNumeros() {
+            var numeros = [];
+            for (var i = 1; i <= 5; i++) {
+                var numero = parseFloat(prompt("Digite o número " + i + ":"));
+                numeros.push(numero);
+            }
+
+            // Ordena os números em ordem crescente
+            numeros.sort(function(a, b) {
+                return a - b;
+            });
+
+            var resultado = document.getElementById("resultado");
+            resultado.innerHTML = "Números ordenados em ordem crescente: " + numeros.join(", ");
+        }
+    </script>
+</head>
+<body>
+    <h1>Ordenação de Números</h1>
+    <p>Informe 5 números para ordená-los em ordem crescente:</p>
+    <button onclick="ordenarNumeros()">Ordenar Números</button>
+    <p id="resultado"></p>
+</body>
+</html>
