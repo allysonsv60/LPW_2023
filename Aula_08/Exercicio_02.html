@@ -3,7 +3,7 @@
 <head>
     <title>Ano Bissexto</title>
     <script>
-        function ano(ano) {
+        function anoBissexto(ano) {
             if ((ano % 4 === 0 && ano % 100 !== 0) || (ano % 400 === 0)) {
                 return true;
             } else {
@@ -13,7 +13,7 @@
 
         function verificarAnoBissexto() {
             var ano = document.getElementById("ano").value;
-            var resultado = ano(ano);
+            var resultado = anoBissexto(ano);
             var mensagem;
 
             if (resultado) {
