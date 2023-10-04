@@ -1,7 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-    <title>Ordenação Decrescente de Números</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <title>Questão 7</title>
+</head>
+<body>
+
+    <h1>Questão 7</h1>
+    <p>Coloque os numeros : </p>
+    <input type="number" id="numero1" placeholder="Número 1"><br><br>
+    <input type="number" id="numero2" placeholder="Número 2"><br><br>
+    <input type="number" id="numero3" placeholder="Número 3"><br><br>
+    <input type="number" id="numero4" placeholder="Número 4"><br><br>
+    <input type="number" id="numero5" placeholder="Número 5"><br><br>
+    <button onclick="ordenarNumerosDecrescente()">Ordenar Números Decrescente</button>
+    <p id="resultado"></p>
+
+
     <script>
         function ordenarNumerosDecrescente() {
             var numeros = [];
@@ -20,16 +37,5 @@
             resultado.innerHTML = "Números ordenados em ordem decrescente: " + numeros.join(", ");
         }
     </script>
-</head>
-<body>
-    <h1>Ordenação Decrescente de Números</h1>
-    <p>Informe 5 números para ordená-los em ordem decrescente:</p>
-    <input type="number" id="numero1" placeholder="Número 1"><br>
-    <input type="number" id="numero2" placeholder="Número 2"><br>
-    <input type="number" id="numero3" placeholder="Número 3"><br>
-    <input type="number" id="numero4" placeholder="Número 4"><br>
-    <input type="number" id="numero5" placeholder="Número 5"><br>
-    <button onclick="ordenarNumerosDecrescente()">Ordenar Números Decrescente</button>
-    <p id="resultado"></p>
 </body>
 </html>

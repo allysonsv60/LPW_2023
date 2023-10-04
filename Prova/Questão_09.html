@@ -1,29 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-    <title>Números Pares entre 20 e 40</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 9</title>
+    
 </head>
+<h1>Questão 9</h1>
 <body>
-    <h1>Números Pares entre 20 e 40</h1>
-    <p>Os números pares entre 20 e 40 são:</p>
-    <ul id="numerosPares"></ul>
-
+    <h4>Numeros pares de 20 a 40 </h4>
+    <p id = "resultado"></p>
+    <button onclick="loop()">Verificar</button>
+    
     <script>
-        
-        var numerosPares = [];
+        function loop() {
 
-        
-        for (var i = 20; i <= 40; i += 2) {
-            numerosPares.push(i);
+         let texto = "";
+
+
+        for (let i = 10; i < 21; i++) {
+            texto +="<br>O numero par é : " + (i*2);
+            
         }
 
-        
-        var listaNumerosPares = document.getElementById("numerosPares");
-        numerosPares.forEach(function(numero) {
-            var itemLista = document.createElement("li");
-            itemLista.textContent = numero;
-            listaNumerosPares.appendChild(itemLista);
-        });
+
+
+       
+        document.getElementById("resultado").innerHTML = texto;
+    }
+
     </script>
+
+
+    
 </body>
 </html>
