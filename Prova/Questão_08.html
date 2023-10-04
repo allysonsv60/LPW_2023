@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Classificação Etária</title>
+</head>
+<body>
+    <h1>Classificação Etária</h1>
+    <form>
+        <label for="nome">Nome: </label>
+        <input type="text" id="nome"><br><br>
+
+        <label for="idade">Idade: </label>
+        <input type="number" id="idade"><br><br>
+
+        <button type="button" onclick="classificarPessoa()">Classificar</button>
+    </form>
+
+    <h2>Classificação:</h2>
+    <p id="classificacao"></p>
+
+    <script>
+        function classificarPessoa() {
+            // Obter o nome e a idade inseridos pelo usuário
+            var nome = document.getElementById("nome").value;
+            var idade = parseInt(document.getElementById("idade").value);
+
+            // Variáveis para armazenar a classificação
+            var classificacao = "";
+
+            // Verificar a faixa etária
+            if (idade >= 0 && idade <= 12) {
+                classificacao = "Criança";
+            } else if (idade >= 13 && idade <= 17) {
+                classificacao = "Adolescente";
+            } else if (idade >= 18 && idade <= 59) {
+                classificacao = "Adulto";
+            } else {
+                classificacao = "Idoso";
+            }
+
+            // Exibir a classificação na página
+            document.getElementById("classificacao").textContent = nome + " é um(a) " + classificacao;
+        }
+    </script>
+</body>
+</html>

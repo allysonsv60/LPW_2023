@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Números Pares entre 20 e 40</title>
+</head>
+<body>
+    <h1>Números Pares entre 20 e 40</h1>
+    <p>Os números pares entre 20 e 40 são:</p>
+    <ul id="numerosPares"></ul>
+
+    <script>
+        // Inicialize uma variável para armazenar a lista de números pares
+        var numerosPares = [];
+
+        // Loop para encontrar números pares entre 20 e 40
+        for (var i = 20; i <= 40; i += 2) {
+            numerosPares.push(i);
+        }
+
+        // Exiba os números pares na lista HTML
+        var listaNumerosPares = document.getElementById("numerosPares");
+        numerosPares.forEach(function(numero) {
+            var itemLista = document.createElement("li");
+            itemLista.textContent = numero;
+            listaNumerosPares.appendChild(itemLista);
+        });
+    </script>
+</body>
+</html>
