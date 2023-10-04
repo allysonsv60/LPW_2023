@@ -20,14 +20,14 @@
 
     <script>
         function classificarPessoa() {
-            // Obter o nome e a idade inseridos pelo usuário
+            
             var nome = document.getElementById("nome").value;
             var idade = parseInt(document.getElementById("idade").value);
 
-            // Variáveis para armazenar a classificação
+            
             var classificacao = "";
 
-            // Verificar a faixa etária
+            
             if (idade >= 0 && idade <= 12) {
                 classificacao = "Criança";
             } else if (idade >= 13 && idade <= 17) {
@@ -38,7 +38,7 @@
                 classificacao = "Idoso";
             }
 
-            // Exibir a classificação na página
+            
             document.getElementById("classificacao").textContent = nome + " é um(a) " + classificacao;
         }
     </script>

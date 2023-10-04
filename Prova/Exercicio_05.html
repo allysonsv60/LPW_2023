@@ -17,29 +17,29 @@
 
     <script>
         function contarVogais() {
-            // Obter a palavra inserida pelo usuário
+            
             var palavra = document.getElementById("palavra").value;
 
-            // Converter a palavra para letras minúsculas para facilitar a comparação
+            
             palavra = palavra.toLowerCase();
 
-            // Definir uma lista de vogais
+            
             var vogais = ['a', 'e', 'i', 'o', 'u'];
 
-            // Inicializar a contagem de vogais
+            
             var contador = 0;
 
-            // Iterar sobre cada caractere da palavra
+            
             for (var i = 0; i < palavra.length; i++) {
                 var caractere = palavra.charAt(i);
 
-                // Verificar se o caractere é uma vogal
+                
                 if (vogais.indexOf(caractere) !== -1) {
                     contador++;
                 }
             }
 
-            // Exibir o número de vogais na página
+            
             document.getElementById("numeroVogais").textContent = "Número de Vogais: " + contador;
         }
     </script>
