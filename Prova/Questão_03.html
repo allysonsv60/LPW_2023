@@ -18,13 +18,13 @@
         <label for="sobrenome">Sobrenome: </label>
         <input type="text" id="sobrenome"><br><br>
 
-        <button type="button" onclick="exibirNomeCompleto()">Exibir Nome Completo</button>
+        <button type="button" onclick="NomeCompleto()">Nome</button>
     </form>
 
     <p id="nomeCompleto"></p>
 
     <script>
-        function exibirNomeCompleto() {
+        function NomeCompleto() {
             
             var primeiroNome = document.getElementById("primeiroNome").value;
             var nomeMeio = document.getElementById("nomeMeio").value;
