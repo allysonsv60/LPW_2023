@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Soma dos Números Pares entre 10 e 30</title>
+</head>
+<body>
+    <h1>Soma dos Números Pares entre 10 e 30</h1>
+    <p>A soma dos números pares entre 10 e 30 é: <span id="resultado"></span></p>
+
+    <script>
+        // Inicialize uma variável para armazenar a soma
+        var soma = 0;
+
+        // Loop para encontrar números pares entre 10 e 30 e somá-los
+        for (var i = 10; i <= 30; i += 2) {
+            soma += i;
+        }
+
+        // Exiba a soma na página HTML
+        document.getElementById("resultado").textContent = soma;
+    </script>
+</body>
+</html>
