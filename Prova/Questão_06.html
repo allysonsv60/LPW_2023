@@ -1,13 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <head>
     <title>Questão 6</title>
 </head>
 <body>
-    <h1>Menor e o maior numero : </h1>
+    <h1>Questão 6</h1>
     <form>
         <label for="numero1">Número 1: </label>
         <input type="number" id="numero1"><br><br>
@@ -24,15 +21,17 @@
         <label for="numero5">Número 5: </label>
         <input type="number" id="numero5"><br><br>
 
-        <button type="button" onclick="encontrarMenorEMaiorNumero()">Encontrar Menor e Maior Número</button>
+        <button type="button" onclick="numero()">Numero</button>
     </form>
-    
+
+    <h2>Menor Número:</h2>
     <p id="menorNumero"></p>
 
+    <h2>Maior Número:</h2>
     <p id="maiorNumero"></p>
 
     <script>
-        function encontrarMenorEMaiorNumero() {
+        function numero() {
             
             var numero1 = parseFloat(document.getElementById("numero1").value);
             var numero2 = parseFloat(document.getElementById("numero2").value);
