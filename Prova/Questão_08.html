@@ -15,14 +15,14 @@
         <label for="idade">Idade: </label>
         <input type="number" id="idade"><br><br>
 
-        <button type="button" onclick="classificarPessoa()">Classificar</button>
+        <button type="button" onclick="pessoa()">Classificar</button>
     </form>
 
    
     <p id="classificacao"></p>
 
     <script>
-        function classificarPessoa() {
+        function pessoa() {
             
             var nome = document.getElementById("nome").value;
             var idade = parseInt(document.getElementById("idade").value);
