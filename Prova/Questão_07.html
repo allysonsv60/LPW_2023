@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ordenação Decrescente de Números</title>
+    <script>
+        function ordenarNumerosDecrescente() {
+            var numeros = [];
+            for (var i = 1; i <= 5; i++) {
+                var inputId = "numero" + i;
+                var numero = parseFloat(document.getElementById(inputId).value);
+                numeros.push(numero);
+            }
+
+            // Ordena os números em ordem decrescente
+            numeros.sort(function(a, b) {
+                return b - a;
+            });
+
+            var resultado = document.getElementById("resultado");
+            resultado.innerHTML = "Números ordenados em ordem decrescente: " + numeros.join(", ");
+        }
+    </script>
+</head>
+<body>
+    <h1>Ordenação Decrescente de Números</h1>
+    <p>Informe 5 números para ordená-los em ordem decrescente:</p>
+    <input type="number" id="numero1" placeholder="Número 1"><br>
+    <input type="number" id="numero2" placeholder="Número 2"><br>
+    <input type="number" id="numero3" placeholder="Número 3"><br>
+    <input type="number" id="numero4" placeholder="Número 4"><br>
+    <input type="number" id="numero5" placeholder="Número 5"><br>
+    <button onclick="ordenarNumerosDecrescente()">Ordenar Números Decrescente</button>
+    <p id="resultado"></p>
+</body>
+</html>

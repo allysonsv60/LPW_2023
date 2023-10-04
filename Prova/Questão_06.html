@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Encontre o Menor e o Maior Número</title>
+</head>
+<body>
+    <h1>Encontre o Menor e o Maior Número</h1>
+    <form>
+        <label for="numero1">Número 1: </label>
+        <input type="number" id="numero1"><br><br>
+
+        <label for="numero2">Número 2: </label>
+        <input type="number" id="numero2"><br><br>
+
+        <label for="numero3">Número 3: </label>
+        <input type="number" id="numero3"><br><br>
+
+        <label for="numero4">Número 4: </label>
+        <input type="number" id="numero4"><br><br>
+
+        <label for="numero5">Número 5: </label>
+        <input type="number" id="numero5"><br><br>
+
+        <button type="button" onclick="encontrarMenorEMaiorNumero()">Encontrar Menor e Maior Número</button>
+    </form>
+
+    <h2>Menor Número:</h2>
+    <p id="menorNumero"></p>
+
+    <h2>Maior Número:</h2>
+    <p id="maiorNumero"></p>
+
+    <script>
+        function encontrarMenorEMaiorNumero() {
+            // Obter os valores dos números inseridos pelo usuário
+            var numero1 = parseFloat(document.getElementById("numero1").value);
+            var numero2 = parseFloat(document.getElementById("numero2").value);
+            var numero3 = parseFloat(document.getElementById("numero3").value);
+            var numero4 = parseFloat(document.getElementById("numero4").value);
+            var numero5 = parseFloat(document.getElementById("numero5").value);
+
+            // Encontrar o menor número usando Math.min
+            var menorNumero = Math.min(numero1, numero2, numero3, numero4, numero5);
+
+            // Encontrar o maior número usando Math.max
+            var maiorNumero = Math.max(numero1, numero2, numero3, numero4, numero5);
+
+            // Exibir o menor e o maior número na página
+            document.getElementById("menorNumero").textContent = "Menor Número: " + menorNumero;
+            document.getElementById("maiorNumero").textContent = "Maior Número: " + maiorNumero;
+        }
+    </script>
+</body>
+</html>
