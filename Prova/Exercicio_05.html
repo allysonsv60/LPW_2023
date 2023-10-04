@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contador de Vogais</title>
+</head>
+<body>
+    <h1>Contagem de Vogais</h1>
+    <form>
+        <label for="palavra">Digite uma palavra: </label>
+        <input type="text" id="palavra"><br><br>
+
+        <button type="button" onclick="contarVogais()">Contar Vogais</button>
+    </form>
+
+    <h2>Número de Vogais:</h2>
+    <p id="numeroVogais"></p>
+
+    <script>
+        function contarVogais() {
+            // Obter a palavra inserida pelo usuário
+            var palavra = document.getElementById("palavra").value;
+
+            // Converter a palavra para letras minúsculas para facilitar a comparação
+            palavra = palavra.toLowerCase();
+
+            // Definir uma lista de vogais
+            var vogais = ['a', 'e', 'i', 'o', 'u'];
+
+            // Inicializar a contagem de vogais
+            var contador = 0;
+
+            // Iterar sobre cada caractere da palavra
+            for (var i = 0; i < palavra.length; i++) {
+                var caractere = palavra.charAt(i);
+
+                // Verificar se o caractere é uma vogal
+                if (vogais.indexOf(caractere) !== -1) {
+                    contador++;
+                }
+            }
+
+            // Exibir o número de vogais na página
+            document.getElementById("numeroVogais").textContent = "Número de Vogais: " + contador;
+        }
+    </script>
+</body>
+</html>
