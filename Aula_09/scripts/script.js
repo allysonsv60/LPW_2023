@@ -91,3 +91,30 @@ function verificarPalavra() {
 
 
 }
+
+function contarVogais() {
+            
+    var palavra = document.getElementById("palavra").value;
+
+    
+    palavra = palavra.toLowerCase();
+
+    
+    var vogais = ['a', 'e', 'i', 'o', 'u'];
+
+    
+    var contador = 0;
+
+    
+    for (var i = 0; i < palavra.length; i++) {
+        var caractere = palavra.charAt(i);
+
+        
+        if (vogais.indexOf(caractere) !== -1) {
+            contador++;
+        }
+    }
+
+    
+    document.getElementById("numeroVogais").textContent = "Número de Vogais: " + contador;
+}
