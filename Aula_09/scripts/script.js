@@ -29,3 +29,30 @@ function calcular() {
 
     document.getElementById('result').textContent ="Resultado é:" + num1;
 }
+
+function calcular() {
+      
+    const peso = parseFloat(document.getElementById("peso").value);
+    const altura = parseFloat(document.getElementById("altura").value);
+    
+    const imc = peso / (altura * 2);
+   
+
+    if (imc < 17) {
+      aviso = "Muito abaixo do peso";
+    } else if (imc >= 17 && imc < 18.5) {
+      aviso = "Abaixo do peso";
+    } else if (imc >= 18.5 && imc < 25) {
+      aviso = "Peso normal";
+    } else if (imc >= 25 && imc < 30) {
+      aviso = "Acima do peso";
+    } else if (imc >= 30 && imc < 35) {
+      aviso = "Obesidade I";
+    } else if (imc >= 35 && imc < 40) {
+      aviso = "Obesidade II (severa)";
+    } else {
+      aviso = "Obesidade III (mórbida)";
+    }
+    
+    document.getElementById("resultado").innerHTML = "Seu IMC é " +imc+ "e sua situação é "+aviso;
+  };
