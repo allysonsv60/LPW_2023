@@ -55,4 +55,17 @@ function calcular() {
     }
     
     document.getElementById("resultado").innerHTML = "Seu IMC é " +imc+ "e sua situação é "+aviso;
-  };
+  }
+
+  function NomeCompleto() {
+            
+    var primeiroNome = document.getElementById("primeiroNome").value;
+    var nomeMeio = document.getElementById("nomeMeio").value;
+    var sobrenome = document.getElementById("sobrenome").value;
+
+    
+    var nomeCompleto = primeiroNome + " " + nomeMeio + " " + sobrenome;
+
+    
+    document.getElementById("nomeCompleto").textContent = "Seu Nome Completo: " + nomeCompleto;
+}
