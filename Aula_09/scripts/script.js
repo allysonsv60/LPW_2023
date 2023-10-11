@@ -154,3 +154,26 @@ function ordenarNumeros() {
     var resultado = document.getElementById("resultado");
     resultado.innerHTML = "Números ordenados em ordem decrescente: " + numeros.join(", ");
 }
+
+function pessoa() {
+            
+    var nome = document.getElementById("nome").value;
+    var idade = parseInt(document.getElementById("idade").value);
+
+    
+    var classificacao = "";
+
+    
+    if (idade >= 0 && idade <= 12) {
+        classificacao = "Criança";
+    } else if (idade >= 13 && idade <= 17) {
+        classificacao = "Adolescente";
+    } else if (idade >= 18 && idade <= 59) {
+        classificacao = "Adulto";
+    } else {
+        classificacao = "Idoso";
+    }
+
+    
+    document.getElementById("classificacao").textContent = nome + " é um " + classificacao;
+}
