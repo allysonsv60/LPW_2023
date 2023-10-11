@@ -137,3 +137,20 @@ function numero() {
     document.getElementById("menorNumero").textContent = "Menor Número: " + menorNumero;
     document.getElementById("maiorNumero").textContent = "Maior Número: " + maiorNumero;
 }
+
+function ordenarNumeros() {
+    var numeros = [];
+    for (var i = 1; i <= 5; i++) {
+        var inputId = "numero" + i;
+        var numero = parseFloat(document.getElementById(inputId).value);
+        numeros.push(numero);
+    }
+
+    
+    numeros.sort(function(a, b) {
+        return b - a;
+    });
+
+    var resultado = document.getElementById("resultado");
+    resultado.innerHTML = "Números ordenados em ordem decrescente: " + numeros.join(", ");
+}
