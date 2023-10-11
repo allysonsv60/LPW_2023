@@ -118,3 +118,22 @@ function contarVogais() {
     
     document.getElementById("numeroVogais").textContent = "Número de Vogais: " + contador;
 }
+
+function numero() {
+            
+    var numero1 = parseFloat(document.getElementById("numero1").value);
+    var numero2 = parseFloat(document.getElementById("numero2").value);
+    var numero3 = parseFloat(document.getElementById("numero3").value);
+    var numero4 = parseFloat(document.getElementById("numero4").value);
+    var numero5 = parseFloat(document.getElementById("numero5").value);
+
+    
+    var menorNumero = Math.min(numero1, numero2, numero3, numero4, numero5);
+
+    
+    var maiorNumero = Math.max(numero1, numero2, numero3, numero4, numero5);
+
+    
+    document.getElementById("menorNumero").textContent = "Menor Número: " + menorNumero;
+    document.getElementById("maiorNumero").textContent = "Maior Número: " + maiorNumero;
+}
