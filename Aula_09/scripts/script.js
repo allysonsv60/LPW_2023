@@ -30,6 +30,9 @@ function calcular() {
     document.getElementById('result').textContent ="Resultado é:" + num1;
 }
 
+//===================================================================================
+//===================================================================================
+
 function calcular() {
       
     const peso = parseFloat(document.getElementById("peso").value);
@@ -57,6 +60,9 @@ function calcular() {
     document.getElementById("resultado").innerHTML = "Seu IMC é " +imc+ "e sua situação é "+aviso;
   }
 
+  //===================================================================================
+  //===================================================================================
+
   function NomeCompleto() {
             
     var primeiroNome = document.getElementById("primeiroNome").value;
@@ -69,6 +75,9 @@ function calcular() {
     
     document.getElementById("nomeCompleto").textContent = "Seu Nome Completo: " + nomeCompleto;
 }
+
+  //===================================================================================
+  //===================================================================================
 
 function verificarPalavra() {
     var a = document.getElementById("palavraInput").value;
@@ -91,6 +100,9 @@ function verificarPalavra() {
 
 
 }
+
+  //===================================================================================
+  //===================================================================================
 
 function contarVogais() {
             
@@ -119,6 +131,9 @@ function contarVogais() {
     document.getElementById("numeroVogais").textContent = "Número de Vogais: " + contador;
 }
 
+  //===================================================================================
+  //===================================================================================
+
 function numero() {
             
     var numero1 = parseFloat(document.getElementById("numero1").value);
@@ -138,6 +153,9 @@ function numero() {
     document.getElementById("maiorNumero").textContent = "Maior Número: " + maiorNumero;
 }
 
+  //===================================================================================
+  //===================================================================================
+
 function ordenarNumeros() {
     var numeros = [];
     for (var i = 1; i <= 5; i++) {
@@ -154,6 +172,9 @@ function ordenarNumeros() {
     var resultado = document.getElementById("resultado");
     resultado.innerHTML = "Números ordenados em ordem decrescente: " + numeros.join(", ");
 }
+
+  //===================================================================================
+  //===================================================================================
 
 function pessoa() {
             
@@ -178,6 +199,9 @@ function pessoa() {
     document.getElementById("classificacao").textContent = nome + " é um " + classificacao;
 }
 
+  //===================================================================================
+  //===================================================================================
+
 function numero() {
 
     let texto = "";
@@ -193,6 +217,9 @@ function numero() {
   
    document.getElementById("resultado").innerHTML = texto;
 }
+
+  //===================================================================================
+  //===================================================================================
 
 function soma() {
         
