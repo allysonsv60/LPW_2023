@@ -193,3 +193,16 @@ function numero() {
   
    document.getElementById("resultado").innerHTML = texto;
 }
+
+function soma() {
+        
+    let soma = "";
+
+    
+    for (var i = 10; i <= 30; i += 2) {
+        soma += i;
+    }
+
+    
+    document.getElementById("resultado").innerHTML = soma;
+}
