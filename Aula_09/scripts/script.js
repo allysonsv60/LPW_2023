@@ -177,3 +177,19 @@ function pessoa() {
     
     document.getElementById("classificacao").textContent = nome + " é um " + classificacao;
 }
+
+function numero() {
+
+    let texto = "";
+
+
+   for (let i = 10; i < 21; i++) {
+       texto +="<br>O numero par é : " + (i*2);
+       
+   }
+
+
+
+  
+   document.getElementById("resultado").innerHTML = texto;
+}
