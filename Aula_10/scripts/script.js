@@ -18,7 +18,7 @@ function alterarTitulo2() {
 
 function alterarP1() {
     var p1 = prompt("Digite o novo p:");
-    document.getElementsByTagName("p")[0].innerHTML = p1;
+    document.getElementsByTagName("p")[1].innerHTML = p1;
 }
 
 function alterarP2() {
