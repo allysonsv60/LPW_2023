@@ -40,3 +40,6 @@ function span() {
     var novoTexto = prompt("Digite o novo span:");
     var spans = document.getElementsByTagName("span").textContent = novoTexto;
 }
+
+var spans = "Hello World!";
+document.getElementById("resultado").innerHTML = olamundo;
