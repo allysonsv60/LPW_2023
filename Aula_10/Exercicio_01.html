@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Exemplo de Página HTML com Botões</title>
+    <title>Trocar titulo da pagina</title>
 </head>
 <body>
-    <h1 id="titulo">Este é um Título Principal (h1)</h1>
-    <p id="paragrafo1">Este é um parágrafo (p) com algum texto de exemplo.</p>
-    <h5 id="subtitulo">Este é um Título de Nível 5 (h5)</h5>
-    <p id="paragrafo2">Outro parágrafo com texto diferente.</p>
+    <h1 id="titulo">Titulo h1</h1>
+    <p id="paragrafo1"> p </p>
+    <h5 id="subtitulo">Titulo h5</h5>
+    
 
     <button onclick="alterarTitulo()">Alterar Título</button>
     <button onclick="alterarParagrafo1()">Alterar Parágrafo 1</button>
     <button onclick="alterarSubtitulo()">Alterar Subtítulo</button>
-    <button onclick="alterarParagrafo2()">Alterar Paragrafo 2</button>
+    
 
     <script>
         function alterarTitulo() {
@@ -29,11 +29,7 @@
             var novoTexto = prompt("Novo texto para o subtítulo:");
             document.getElementById("subtitulo").textContent = novoTexto;
         }
-
-        function alterarParagrafo2() {
-            var novoTexto = prompt("Novo texto para o segundo parágrafo:");
-            document.getElementById("paragrafo2").textContent = novoTexto;
-        }
+       
     </script>
 </body>
 </html>
