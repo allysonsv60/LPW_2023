@@ -1,15 +1,15 @@
 function alterarTitulo() {
-    var novoTexto = prompt("Novo texto para o título:");
+    var novoTexto = prompt("Digite um novo título:");
     document.getElementById("titulo").textContent = novoTexto;
 }
 
-function alterarParagrafo1() {
-    var novoTexto = prompt("Novo texto para o primeiro parágrafo:");
-    document.getElementById("paragrafo1").textContent = novoTexto;
+function alterarP() {
+    var novoTexto = prompt("Digite o novo p:");
+    document.getElementById("p").textContent = novoTexto;
 }
 
 function alterarTitulo2() {
-    var novoTexto = prompt("Novo texto para o titulo:");
+    var novoTexto = prompt("Digite um novo titulo:");
     document.getElementById("titulo2").textContent = novoTexto;
 }
 
