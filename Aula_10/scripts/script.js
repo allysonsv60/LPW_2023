@@ -35,11 +35,3 @@ function alterarP4() {
     var novoTexto = prompt("Digite o novo p:");
     document.getElementById("p4").textContent = novoTexto;
 }
-
-function span() {
-    var novoTexto = prompt("Digite o novo span:");
-    var spans = document.getElementsByTagName("span").textContent = novoTexto;
-}
-
-var spans = "Hello World!";
-document.getElementById("resultado").innerHTML = olamundo;
