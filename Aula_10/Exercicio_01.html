@@ -6,12 +6,12 @@
 <body>
     <h1 id="titulo">Titulo h1</h1>
     <p id="paragrafo1"> p </p>
-    <h5 id="subtitulo">Titulo h5</h5>
+    <h5 id="titulo2">Titulo h5</h5>
     
 
     <button onclick="alterarTitulo()">Alterar Título</button>
     <button onclick="alterarParagrafo1()">Alterar Parágrafo 1</button>
-    <button onclick="alterarSubtitulo()">Alterar Subtítulo</button>
+    <button onclick="alterarTitulo2()">Alterar Titulo2</button>
     
 
     <script>
@@ -25,9 +25,9 @@
             document.getElementById("paragrafo1").textContent = novoTexto;
         }
 
-        function alterarSubtitulo() {
-            var novoTexto = prompt("Novo texto para o subtítulo:");
-            document.getElementById("subtitulo").textContent = novoTexto;
+        function alterarTitulo2() {
+            var novoTexto = prompt("Novo texto para o titulo:");
+            document.getElementById("titulo2").textContent = novoTexto;
         }
        
     </script>
