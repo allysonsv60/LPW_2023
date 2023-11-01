@@ -18,12 +18,12 @@ function alterarTitulo2() {
 
 function alterarP1() {
     var p1 = prompt [0];
-    for (var p1 = 1; i <= 4; p1++) {
+    for (var i = 1; i <= 5; i++) {
        
         var p1 = prompt("Digite o novo p:");
-        document.getElementsByTagName("p")[0].innerHTML = p1;
+        document.getElementsByTagName("p")[0,1,2,3].innerHTML = p1;
     }
-        
 }
+  
    
 
