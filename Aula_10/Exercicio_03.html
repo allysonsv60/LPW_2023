@@ -7,10 +7,14 @@
     
     
 
-
+    <button onclick="alterarP1()">Alterar P1</button>
     
     <script>
         var p1 = "p1";
+        function alterarP1() {
+        var p1 = prompt("Digite o novo p:");
+        document.getElementByTagname("p1").textContent = novoTexto;
+}
 
     </script>
 </body>
