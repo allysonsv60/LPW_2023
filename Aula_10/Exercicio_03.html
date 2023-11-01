@@ -21,12 +21,18 @@
     <button onclick="alterarP2()">p2</button>
     <button onclick="alterarP3()">p3</button>
     <button onclick="alterarP4()">p4</button>
+    <button onclick="span()">span</button>
     
     
 
     <script>
-             var olamundo = "Hello World!";
+            var span = "span";
         document.getElementById("resultado").innerHTML = olamundo;
+
+        function span() {
+            var novoTexto = prompt("Digite o novo span:");
+            var spans = document.getElementsByTagName("span").textContent = novoTexto;
+}
 
 
 
