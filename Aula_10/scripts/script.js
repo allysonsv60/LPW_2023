@@ -17,21 +17,13 @@ function alterarTitulo2() {
 //==========================================================================
 
 function alterarP1() {
-    var p1 = prompt("Digite o novo p:");
-    document.getElementsByTagName("p")[1].innerHTML = p1;
+    var p1 = prompt [0];
+    for (var i = 1; i <= 5; i++) {
+       
+        var p1 = prompt("Digite o novo p:");
+        document.getElementsByTagName("p")[0].innerHTML = p1;
+    }
+        
 }
+   
 
-function alterarP2() {
-    var novoTexto = prompt("Digite o novo p:");
-    document.getElementById("p2").textContent = novoTexto;
-}
-
-function alterarP3() {
-    var novoTexto = prompt("Digite o novo p:");
-    document.getElementById("p3").textContent = novoTexto;
-}
-
-function alterarP4() {
-    var novoTexto = prompt("Digite o novo p:");
-    document.getElementById("p4").textContent = novoTexto;
-}
