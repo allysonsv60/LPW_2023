@@ -3,15 +3,16 @@
 <head>
 <script>
 function myFunction() {
-  document.getElementById("demo").innerHTML = "You selected some text";
+  alert("You pressed a key inside the input field");
+  document.getElementById('text').textContent ="Resultado é:" + text;
 }
 </script>
 </head>
 <body>
 
-Some text: <input type="text" value=0 onselect="myFunction()">
+<p>A function is triggered when the user is pressing a key in the input field.</p>
 
-<p id="demo"></p>
+<input type="text" onkeydown="myFunction()">
 
 </body>
 </html>
