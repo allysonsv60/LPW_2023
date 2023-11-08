@@ -5,14 +5,21 @@
 
 <p>Escreva:</p>
 
-<input type="text" id="num" onkeyup="check();">
-<script>
-function check() {
-  var texto = document.getElementById("num").value;
-  document.getElementById("num").value = texto.UpperCase();
-    
-}
+<input type="numero" id="numero" onkeyup="tabuada()">
 
+<p id="resultado"></p>
+
+<script>
+function tabuada() {
+  var numero = document.getElementById("numero");
+  var resultado = document.getElementById("resultado");
+  resultado.innerText = " ";
+  
+    var div = document.createElement("div");
+    div.innerText = numero.value * i;
+    resultado.appendChild(div);
+  
+}
 </script>
 
 </body>
