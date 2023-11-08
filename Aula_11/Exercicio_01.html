@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head>
-<script>
-function myFunction() {
-  alert("You pressed a key inside the input field");
-  document.getElementById('text').textContent ="Resultado é:" + text;
-}
-</script>
-</head>
 <body>
+<h1>HTML DOM Events</h1>
+<h2>The onkeydown Event</h2>
 
-<p>A function is triggered when the user is pressing a key in the input field.</p>
+<p>Press a key in the input field:</p>
 
 <input type="text" onkeydown="myFunction()">
 
-<p id="text"></p>
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = demo *1,demo*2;
+}
+</script>
 
 </body>
 </html>
