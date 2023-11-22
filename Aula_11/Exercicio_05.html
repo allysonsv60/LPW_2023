@@ -3,21 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <title>Exibir Hora Atual</title>
-  <script>
-    function mostrarHora() {
-      var data = new Date();
-      var hora = data.toLocaleTimeString();
-
-      
-      document.getElementById("hora-atual").innerText = "Hora atual: " + hora;
-    }
-  </script>
-  <style>
-    
-  </style>
-</head>
+  
+ </head>
 <body>
+
+    <script>
+        function mostrarHora() {
+          var data = new Date();
+          var hora = data.toLocaleTimeString();
+    
+          
+          document.getElementById("hora-atual").innerText = "Hora atual: " + hora;
+        }
+      </script>
+
   <button id="botao" onmouseover="mostrarHora()">Passe o mouse aqui</button>
   <p id="hora-atual"></p>
+
+  
 </body>
 </html>
