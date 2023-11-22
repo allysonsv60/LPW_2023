@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exibir Hora Atual</title>
+  <script>
+    function mostrarHora() {
+      // Obtém a hora atual
+      var data = new Date();
+      var hora = data.toLocaleTimeString();
+
+      // Exibe a hora atual na área de texto
+      document.getElementById("hora-atual").innerText = "Hora atual: " + hora;
+    }
+  </script>
+  <style>
+    #botao {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <button id="botao" onmouseover="mostrarHora()">Passe o mouse aqui</button>
+  <p id="hora-atual"></p>
+</body>
+</html>
